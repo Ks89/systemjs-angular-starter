@@ -1,0 +1,41 @@
+{
+  "name": "systemjs-angular-starter",
+  "version": "1.0.0",
+  "description": "Systemjs starter for angular",
+  "main": "app/main.ts",
+  "license": "MIT",
+  "author": "Stefano Cappa",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ks89/systemjs-angular-starter.git"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\"",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "dependencies": {
+    "@angular/cdk": "^9.2.0",
+    "@angular/common": "^9.1.1",
+    "@angular/compiler": "^9.1.1",
+    "@angular/core": "^9.1.1",
+    "@angular/forms": "^9.1.1",
+    "@angular/platform-browser": "^9.1.1",
+    "@angular/platform-browser-dynamic": "^9.1.1",
+    "@angular/router": "^9.1.1",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.5",
+    "systemjs": "=0.21.5",
+    "zone.js": "^0.10.3"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "copyfiles": "^2.2.0",
+    "lite-server": "^2.5.4",
+    "typescript": "^3.8.3"
+  }
+}
